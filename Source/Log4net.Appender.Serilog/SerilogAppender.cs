@@ -20,6 +20,11 @@ namespace Log4net.Appender.Serilog
             _ArgumentsGetter = GetFieldAccessor<SystemStringFormat, object[]>("m_args");
         }
 
+        public SerilogAppender()
+        {
+            _Logger = null;
+        }
+
         public SerilogAppender(global::Serilog.ILogger logger = null)
         {
             _Logger = logger;
