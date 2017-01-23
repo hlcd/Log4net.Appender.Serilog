@@ -14,6 +14,8 @@ namespace Log4net.Appender.Serilog
         private static readonly Func<SystemStringFormat, object[]> _ArgumentsGetter;
         private readonly global::Serilog.ILogger _Logger;
 
+        public bool UseParameterExtraction { get; set; } = true;
+
         static SerilogAppender()
         {
             _FormatGetter = GetFieldAccessor<SystemStringFormat, string>("m_format");
@@ -38,7 +40,7 @@ namespace Log4net.Appender.Serilog
             object[] parameters = null;
 
             SystemStringFormat systemStringFormat = loggingEvent.MessageObject as SystemStringFormat;
-            if (systemStringFormat != null)
+            if (UseParameterExtraction && systemStringFormat != null)
             {
                 template = _FormatGetter(systemStringFormat);
                 parameters = _ArgumentsGetter(systemStringFormat);

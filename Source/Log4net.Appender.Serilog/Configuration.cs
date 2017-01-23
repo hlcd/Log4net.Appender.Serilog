@@ -6,9 +6,12 @@
         /// Configures log4net to log to Serilog.
         /// </summary>
         /// <param name="logger">The serilog logger (if left null Log.Logger will be used).</param>
-        public static void Configure(global::Serilog.ILogger logger = null)
+        public static void Configure(global::Serilog.ILogger logger = null, bool useParameterExtraction = false)
         {
-            var serilogAppender = new Log4net.Appender.Serilog.SerilogAppender(logger);
+            var serilogAppender = new Log4net.Appender.Serilog.SerilogAppender(logger)
+            {
+                UseParameterExtraction = useParameterExtraction
+            };
             serilogAppender.ActivateOptions();
             var loggerRepository = (log4net.Repository.Hierarchy.Hierarchy)log4net.LogManager.GetRepository();
             loggerRepository.Root.AddAppender(serilogAppender);
