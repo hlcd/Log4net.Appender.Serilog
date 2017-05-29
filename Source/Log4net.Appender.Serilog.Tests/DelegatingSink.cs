@@ -4,7 +4,7 @@ using Serilog.Core;
 using Serilog.Events;
 using System;
 
-namespace Log4net.Appender.Serilog.Tests
+namespace log4net.Appender.Serilog.Tests
 {
     public class DelegatingSink : ILogEventSink
     {

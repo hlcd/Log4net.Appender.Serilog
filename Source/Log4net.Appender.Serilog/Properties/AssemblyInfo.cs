@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Log4net.Appender.Serilog")]
+[assembly: AssemblyTitle("log4net.Appender.Serilog")]
 [assembly: AssemblyDescription("no description")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MyCompany")]
-[assembly: AssemblyProduct("Log4net.Appender.Serilog")]
+[assembly: AssemblyProduct("log4net.Appender.Serilog")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -31,7 +31,7 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.3")]
-[assembly: AssemblyVersion("1.0.3")]
-[assembly: AssemblyFileVersion("1.0.3")]
-[assembly: System.Reflection.AssemblyInformationalVersion("1.0.3")]
+// [assembly: AssemblyVersion("1.0.5")]
+[assembly: AssemblyVersion("1.0.5")]
+[assembly: AssemblyFileVersion("1.0.5")]
+[assembly: System.Reflection.AssemblyInformationalVersion("1.0.5-master005-653c8")]

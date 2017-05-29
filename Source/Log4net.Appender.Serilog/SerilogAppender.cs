@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Serilog;
 
-namespace Log4net.Appender.Serilog
+namespace log4net.Appender.Serilog
 {
     public class SerilogAppender : log4net.Appender.AppenderSkeleton
     {

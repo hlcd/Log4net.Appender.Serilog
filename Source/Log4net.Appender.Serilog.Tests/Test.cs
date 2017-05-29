@@ -4,7 +4,7 @@ using Xunit;
 using Serilog.Events;
 using Serilog;
 
-namespace Log4net.Appender.Serilog.Tests
+namespace log4net.Appender.Serilog.Tests
 {
     public class Test
     {
@@ -14,7 +14,7 @@ namespace Log4net.Appender.Serilog.Tests
             // reset log4net configuration
             log4net.LogManager.ResetConfiguration();
 
-            Log4net.Appender.Serilog.Configuration.Configure(useParameterExtraction: true);
+            log4net.Appender.Serilog.Configuration.Configure(useParameterExtraction: true);
             var log = log4net.LogManager.GetLogger("TypeName");
 
             var events = new List<LogEvent>();
@@ -51,7 +51,7 @@ namespace Log4net.Appender.Serilog.Tests
             // reset log4net configuration
             log4net.LogManager.ResetConfiguration();            
 
-            Log4net.Appender.Serilog.Configuration.Configure();
+            log4net.Appender.Serilog.Configuration.Configure();
             var log = log4net.LogManager.GetLogger("TypeName");
 
             var events = new List<LogEvent>();
